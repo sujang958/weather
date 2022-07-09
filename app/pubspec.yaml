@@ -42,8 +42,8 @@ flutter:
   fonts:
     - family: Pretendard
       fonts:
-        - asset: fonts/Pretendard-Regular.ttf
-        - asset: fonts/Pretendard-Medium.ttf
+        - asset: fonts/Pretendard-Regular.otf
+        - asset: fonts/Pretendard-Medium.otf
           weight: 500
-        - asset: fonts/Pretendard-Bold.ttf
+        - asset: fonts/Pretendard-Bold.otf
           weight: 700
