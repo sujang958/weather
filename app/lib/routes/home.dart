@@ -51,27 +51,48 @@ class _HomeRouteState extends State<HomeRoute> {
                   ),
                   SliverList(
                     delegate: SliverChildListDelegate([
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Suseong-gu",
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 6.0,
+                          horizontal: 12.0,
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12.0),
+                          image: DecorationImage(
+                            image: AssetImage('assets/sunny.png'),
+                            fit: BoxFit.cover,
+                            opacity: 54.0
+                          ),
+                          
+                        ),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Suseong-gu",
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16.0,
+                                    )),
+                                Text(
+                                  "27 °C",
                                   style: const TextStyle(
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 16.0,
-                                  )),
-                              Text(
-                                "27 °C",
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 28.0,
-                                ),
-                              ), // this is bigger
-                            ],
-                          )
-                        ],
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 28.0,
+                                  ),
+                                ), // this is bigger
+                              ],
+                            ),
+                            Icon(
+                              CupertinoIcons.sun_max_fill,
+                              color: Colors.white,
+                              size: 29.0,
+                            ), // todo: add bg image (container(box decoration))
+                          ],
+                        ),
                       ),
                     ]),
                   ),
